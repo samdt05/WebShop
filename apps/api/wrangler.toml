@@ -1,0 +1,20 @@
+name = "moc-nhien-store"
+main = "src/index.ts"
+compatibility_date = "2025-04-09"
+compatibility_flags = ["nodejs_compat"]
+
+[assets]
+directory = "../web/dist"
+binding = "ASSETS"
+run_worker_first = ["/api/*"]
+not_found_handling = "single-page-application"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "store-db-moc-nhien-demo"
+database_id = "fbcf838e-72ee-4aad-aed7-057aabe33c8b"
+migrations_dir = "migrations"
+
+[[kv_namespaces]]
+binding = "CART"
+id = "1344b60959f04e768d1532e5de78812c"

@@ -1,0 +1,11 @@
+node_modules/
+apps/web/dist/
+apps/api/.wrangler/
+.dev.vars
+.env
+.env.*
+!.env.example
+npm-debug.log*
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
